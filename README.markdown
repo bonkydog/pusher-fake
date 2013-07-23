@@ -8,7 +8,7 @@ A fake [Pusher](http://pusher.com) server for development and testing.
 
 ```erb
 <script>
-  <%== PusherFake.javascript if defined?(PusherFake) %>
+  <%= PusherFake.javascript if defined?(PusherFake) %>
 </script>
 ```
 
