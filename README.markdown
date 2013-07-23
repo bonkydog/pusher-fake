@@ -8,13 +8,7 @@ A fake [Pusher](http://pusher.com) server for development and testing.
 
 ```erb
 <script>
-  <% if defined?(PusherFake) %>
-    // Test environment.
-    var instance = <%= PusherFake.javascript %>;
-  <% else %>
-    // Other environments, such as production.
-    var instance = new Pusher(...);
-  <% end %>
+  <%== PusherFake.javascript if defined?(PusherFake) %>
 </script>
 ```
 
